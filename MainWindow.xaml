@@ -8,5 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <Menu>
+            <MenuItem Header="Add Task"/>
+            <MenuItem Header="View History"/>
+        </Menu>
+
     </Grid>
 </Window>

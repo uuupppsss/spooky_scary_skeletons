@@ -25,4 +25,13 @@ namespace spooky_scary_skeletons
             InitializeComponent();
         }
     }
+
+     public class TasckModel
+    {
+        public string Description { get; set; }
+        public DateTime CreateDate { get; set; }
+        public bool IsUrgent { get; set; }
+        public string Status { get; set; }
+        public DateTime Completedate { get; set; }
+    }
 }
