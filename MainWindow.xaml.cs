@@ -20,12 +20,20 @@ using System.Windows.Shapes;
 
 namespace spooky_scary_skeletons
 {
+    public enum TaskStatuses
+    {
+        Pending,
+        InProgress,
+        Complited,
+        Rejected
+    }
+
     public class TaskModel
     {
         public string Description { get; set; }
         public DateTime CreateDate { get; set; }
         public bool IsUrgent { get; set; }
-        public string Status { get; set; }
+        public TaskStatuses Status { get; set; }
         public DateTime Completedate { get; set; }
     }
 

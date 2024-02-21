@@ -7,11 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="taskListBox" DisplayMemberPath="Description" SelectedValuePath="Status"/>
-        <Menu>
-            <MenuItem Header="Add Task"/>
-            <MenuItem Header="View History"/>
-        </Menu>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="История" FontFamily="Impact" FontSize="18" Foreground="#FF9013A5">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Pink" Offset="0"/>
+                    <GradientStop Color="#FFFF71FA" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Добавить задачу" Grid.Column="1" />
+        <TextBlock Text="" Grid.Row="1" Grid.Column="0" />
+        <TextBlock Text="Описание" Grid.Row="1" Grid.Column="0" />
+        <TextBlock Text="Дата создания" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock Text="Срочность" Grid.Column="2" Grid.Row="1"/>
+        <TextBlock Text="Статус" Grid.Column="3" Grid.Row="1"/>
+        <TextBlock Text="Дата завершения" Grid.Column="4" Grid.Row="1"/>
+
 
     </Grid>
 </Window>
