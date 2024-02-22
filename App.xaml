@@ -4,7 +4,23 @@
              xmlns:local="clr-namespace:spooky_scary_skeletons"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="David CLM MediumItalic"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
         <Style TargetType="Button">
-            <Setter Property="FontFamily" Value="">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontFamily" Value="Impact"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#FF9013A5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Microsoft Himalaya"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="Pink"/>
+        </Style>
     </Application.Resources>
 </Application>

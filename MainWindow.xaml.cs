@@ -19,7 +19,7 @@ using System.Windows.Shapes;
 
 
 namespace spooky_scary_skeletons
-{
+{ /*
     public enum TaskStatuses
     {
         Pending,
@@ -58,18 +58,29 @@ namespace spooky_scary_skeletons
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// */
     public partial class MainWindow : Window
     {
-        private TaskManager taskManager;
-
+        //private TaskManager taskManager;
+    
         public MainWindow()
         {
-            taskManager = new TaskManager();
+            //taskManager = new TaskManager();
             InitializeComponent();
 
         }
 
-       
+        private void AddNewTask_Click(object sender, RoutedEventArgs e)
+        {
+            NewTaskWindow taskWindow = new NewTaskWindow();
+            taskWindow.Show();
+        }
+
+        private void OpenHistoryWindow_Click(object sender, RoutedEventArgs e)
+        {
+            HistoryWindow historyWindow = new HistoryWindow();
+            historyWindow.Show();
+        }
     }
 
 }

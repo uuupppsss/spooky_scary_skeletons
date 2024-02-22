@@ -15,13 +15,11 @@ using System.Windows.Shapes;
 namespace spooky_scary_skeletons
 {
     /// <summary>
-    /// Логика взаимодействия для NewTaskWindow.xaml
+    /// Логика взаимодействия для HistoryWindow.xaml
     /// </summary>
-    public partial class NewTaskWindow : Window
+    public partial class HistoryWindow : Window
     {
-       // private TaskManager taskManager;
-
-        public NewTaskWindow()
+        public HistoryWindow()
         {
             InitializeComponent();
         }
