@@ -19,7 +19,7 @@ using System.Windows.Shapes;
 
 
 namespace spooky_scary_skeletons
-{ /*
+{ /
     public enum TaskStatuses
     {
         Pending,
@@ -27,6 +27,7 @@ namespace spooky_scary_skeletons
         Complited,
         Rejected
     }
+    /*
 
     public class TaskModel
     {
